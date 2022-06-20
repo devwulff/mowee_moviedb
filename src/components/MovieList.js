@@ -10,12 +10,12 @@ const MovieList = () => {
     )
       .then((response) => response.json())
       .then((data) => {
-        setDetails([data]);
-        setImage(data.results.poster_path);
+        setDetails(data.results);
+        setImage([data.results.poster_path]);
       });
   }, []);
-  console.log([details]);
-  console.log(setImage);
+  console.log(details);
+  // console.log(setImage);
 
   return (
     <>
@@ -24,12 +24,16 @@ const MovieList = () => {
         {details.map((elt, i) => {
           return (
             <div key={i}>
-              <p>
+              {/* <p>
                 Die 25 besten Filme aller Zeiten:
                 {elt.average_rating.toFixed(1)} durchschnittsbewertung
-              </p>
-              <h2>{elt.results[0].title}</h2>
-              <p>{elt.results[0].release_date}</p>
+              </p> */}
+              <img
+                src={`https://image.tmdb.org/t/p/original${elt.poster_path}`}
+                alt=""
+              />
+              <h2>{elt.title}</h2>
+              <p>{elt.release_date}</p>
             </div>
           );
         })}
