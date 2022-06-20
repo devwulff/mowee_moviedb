@@ -16,9 +16,11 @@ const MovieList = () => {
 
     console.log(details);
 
+
     return (
         <div>
             {details.map((elt, i) => {
+
                 return (
                     <MovieItem
                         key={i}
