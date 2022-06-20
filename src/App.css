@@ -1,28 +1,106 @@
+/* ============================================
+                RESOURCES
+============================================ */
+
+/* Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500&display=swap');
+
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Colors */
+
+/* 
+NavbarBackground: #1A2634
+SearchInputBackground: #24323F
+Accents, SearchIcon, Rating: #21E18C
+MainBackground: rgb(39, 50,62)
+*/
+
+/* ============================================
+                GENERAL
+============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html {
-    text-align: center;
+    font-size: 62.5%;
 }
 
-body {
-    background: grey;
-    color: white;
-    padding: 50px;
+h1 {
+    font-family: 'Anton', sans-serif;
+    color: #fff;
 }
 
-.movielist {
+h2 {
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+}
+
+/* ============================================
+                HEADER
+============================================ */
+
+.navigation {
+    display: flex;
+    align-items: center;
+    background: #1A2634;
+    height: 10vh;
+}
+
+.headerLink {
+    text-decoration: none;
+    padding-left: 5vw;
+    font-size: 2.5rem;
+}
+
+.navigation h1 span {
+    color: #21E18C;
+}
+
+.navigation input {
+    background: #24323F;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0 auto;
+}
+
+/* ============================================
+                MAIN
+============================================ */
+
+.main {
+    background: rgb(39, 50, 62);
+    padding: 3%;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+}
+
+.movie-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    flex-wrap: wrap;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+
+
 }
 
-@media only screen and (max-width: 844px) {
-    .movielist {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-    }
+/* ============================================
+                MAIN/MovieCard
+============================================ */
+
+.moviecard img {
+    width: 100%;
 }

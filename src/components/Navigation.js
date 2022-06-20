@@ -5,22 +5,23 @@ const Navigation = () => {
   const [input, setInput] = useState("");
 
   return (
-    <div>
-      <h1>Navigation Placeholder</h1>
-      <Link to={`/ `}>
-        <button className="button">HOME</button>
+    <header className="navigation">
+      {/* <h1>Navigation Placeholder</h1> */}
+      <Link to={`/ `} className="headerLink">
+        {/* <button className="button">HOME</button> */}
+        <h1><span>.</span>MOV</h1>
       </Link>
       <input
         type="text"
         name="search"
         id="searchbar"
-        placeholder="Type Movie here"
+        placeholder="👀 Type Movie here"
         onChange={(e) => setInput(e.target.value)}
       />
       <Link className="btn" to={`/MovieItem/${input}`}>
         Search
       </Link>
-    </div>
+    </header>
   );
 };
 

@@ -1,8 +1,8 @@
 
 const MovieCard = (props) => {
 
-    return (<div className="moviecard">
-        <img src={`https://image.tmdb.org/t/p/w342/${props.poster_path}`} alt="" />
+    return (<div>
+        <img src={`https://image.tmdb.org/t/p/w185/${props.poster_path}`} alt="" />
         <h3>{props.title}</h3>
         <p>{props.overview}</p>
         <p>Rating: {props.vote_average}</p>

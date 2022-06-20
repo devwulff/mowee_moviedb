@@ -15,18 +15,21 @@ const MovieList = () => {
     }, []);
 
     return (
-        <div>
-            {details.map((elt, i) => {
-                return (
-                    <MovieItem
-                        key={i}
-                        title={elt.title}
-                        year={elt.release_date}
-                        img={elt.poster_path}
-                    />
-                );
-            })}
-        </div>
+        <main className="main">
+            <h1>Greatest Movies of all Time</h1>
+            <div className="movie-list">
+                {details.map((elt, i) => {
+                    return (
+                        <MovieItem
+                            key={i}
+                            year={elt.release_date}
+                            title={elt.title}
+                            img={elt.poster_path}
+                        />
+                    );
+                })}
+            </div>
+        </main>
     );
 };
 export default MovieList;
