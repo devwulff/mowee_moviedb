@@ -23,6 +23,7 @@ const MovieList = () => {
                     <MovieItem
 
                         key={i}
+                        // id={elt.id}
                         title={elt.title}
                         year={elt.release_date}
                         img={elt.poster_path}
