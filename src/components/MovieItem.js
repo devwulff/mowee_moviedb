@@ -8,7 +8,7 @@ const MovieItem = (props) => {
         <img src={`https://image.tmdb.org/t/p/w500${props.img}`} alt="Bild des Films" />
         <h2>{props.title}</h2>
         <p>{props.year}</p>
-        <Link to={`/details/${props.id}`}>Read More</Link>
+        <Link to={`/details/${props.id}`}>Detailseite</Link>
     </div>);
 }
 
