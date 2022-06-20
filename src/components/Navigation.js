@@ -14,10 +14,10 @@ const Navigation = () => {
         type="text"
         name="search"
         id="searchbar"
-        placeholder="Type anything here"
+        placeholder="Type Movie here"
         onChange={(e) => setInput(e.target.value)}
       />
-      <Link className="btn" to={`/details/${input}`}>
+      <Link className="btn" to={`/MovieItem/${input}`}>
         Search
       </Link>
     </div>
@@ -25,3 +25,5 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+// https://api.themoviedb.org/3/search/movie?&query=${input}&api_key=f609f173487177fd0f9d5d8e5193e2fe&language=de-DE&page=1&include_adult=false
