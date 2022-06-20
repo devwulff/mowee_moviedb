@@ -1,6 +1,11 @@
+html {
+    text-align: center;
+}
+
 body {
     background: grey;
     color: white;
+    padding: 50px;
 }
 
 .movielist {
@@ -9,4 +14,15 @@ body {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 844px) {
+    .movielist {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+    }
 }
