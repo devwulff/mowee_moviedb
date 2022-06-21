@@ -1,24 +1,21 @@
-import { Link } from "react-router-dom";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./App.css";
-import Footer from "./components/Footer";
-import Navigation from "./components/Navigation";
-import MovieList from "./components/MovieList";
+import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from './pages/Home';
+import Details from './components/Details';
+import Filter from './components/Filter';
 
 function App() {
   return (
     <div className="App">
-      <Navigation />
-      <MovieList />
-      {/* <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/movielist" element={<MovieList />} />
-        <Route path="/gallery/:id" element={<Details />} />
-      </Routes> */}
-      <Footer />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="details" element={<Details />} />
+        <Route path="details/:id" element={<Details />} />
+        <Route path="filter" element={<Filter />} />
+      </Routes>
     </div>
   );
 }
 
 export default App;
+
