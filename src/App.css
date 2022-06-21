@@ -1,47 +1,185 @@
-.App {
-  text-align: center;
+/* ============================================
+                RESOURCES
+============================================ */
+
+/* Fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500&display=swap");
+
+/* 
+font-family: 'Anton', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+/* Colors */
+
+/* 
+NavbarBackground: #1A2634
+SearchInputBackground: #24323F
+Accents, SearchIcon, Rating: #21E18C
+MainBackground: rgb(39, 50,62)
+*/
+
+/* ============================================
+                GENERAL
+============================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  font-size: 62.5%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: "Anton", sans-serif;
+  color: #fff;
+  font-weight: 400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h2 {
+  font-family: "Anton", sans-serif;
+  color: #fff;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 200;
+  font-size: 1.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* ============================================
+                HEADER
+============================================ */
+
+.navigation {
+  display: flex;
+  align-items: center;
+  background: #1a2634;
+  height: 20vh;
+  padding: 4%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerLink {
+  text-decoration: none;
+  font-size: 2.5rem;
 }
 
-.inputsearch {
+.navigation h1 span {
+  color: #21e18c;
+}
+
+.navigation div {
+  margin: 0 25%;
+}
+
+.navigation div input {
+  background: #24323f;
+  border: none;
+  padding: 20px 100px;
+  border-radius: 30px;
+  font-family: "Roboto", sans-serif;
   text-align: center;
+  font-size: 1.5rem;
 }
 
-.la-search {
+.navigation div input::placeholder {
+  font-size: 2rem;
+}
+
+.searchbar {
+  position: relative;
+}
+
+.glass {
   font-size: 3rem;
-  color: black;
+  color: #21e18c;
+  position: relative;
+  left: 15px;
+}
+
+/* ============================================
+                    MAIN
+============================================ */
+
+.main {
+  background: rgb(39, 50, 62);
+  padding: 4%;
+}
+
+.main h1 {
+  font-size: 3.5rem;
+  margin: 5vh 0 8vh 0;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+/* ============================================
+                MAIN/MovieCard
+============================================ */
+.moviecard {
+  width: 90%;
+}
+
+.moviecard img {
+  width: 100%;
+}
+
+.moviecard h2 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+/* ============================================
+                    Footer
+============================================ */
+
+.footer {
+  padding: 3% 6%;
+  display: flex;
+  align-items: center;
+  background: #1a2634;
+  height: 20vh;
+}
+
+.footer h1 {
+  font-size: 5rem;
+  margin-right: 10vw;
+}
+
+.footer p {
+  margin-right: 15vw;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.footer h1 span {
+  color: #21e18c;
+}
+
+.footer div a:last-of-type {
+  color: rgb(39, 50, 62);
+}
+
+.insta {
+  font-size: 6rem;
+  color: #21e18c;
+  margin-right: 30px;
+}
+
+.fbook {
+  font-size: 5rem;
+  border: 1px 1px 0 1px solid #21e18c;
+  background-color: #21e18c;
+  border-radius: 5px;
+  padding: 5px 10px 0 10px;
 }
