@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.inputsearch {
+  text-align: center;
+}
+
+.la-search {
+  font-size: 3rem;
+  color: black;
+}
