@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+
 
 const Navigation = () => {
   const [input, setInput] = useState("");
@@ -11,13 +14,16 @@ const Navigation = () => {
         {/* <button className="button">HOME</button> */}
         <h1><span>.</span>MOV</h1>
       </Link>
-      <input
-        type="text"
-        name="search"
-        id="searchbar"
-        placeholder="👀 Type Movie here"
-        onChange={(e) => setInput(e.target.value)}
-      />
+      <div className="searchbar">
+        <input
+          type="text"
+          name="search"
+          id="searchbar"
+          placeholder="Type Movie here"
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <FontAwesomeIcon className="glass" icon={faMagnifyingGlass} />
+      </div>
       <Link className="btn" to={`/MovieItem/${input}`}>
         Search
       </Link>

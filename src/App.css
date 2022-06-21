@@ -37,11 +37,19 @@ html {
 h1 {
     font-family: 'Anton', sans-serif;
     color: #fff;
+    font-weight: 400;
 }
 
 h2 {
     font-family: 'Anton', sans-serif;
     color: #fff;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: white;
 }
 
 /* ============================================
@@ -52,12 +60,12 @@ h2 {
     display: flex;
     align-items: center;
     background: #1A2634;
-    height: 10vh;
+    height: 20vh;
+    padding: 4%;
 }
 
 .headerLink {
     text-decoration: none;
-    padding-left: 5vw;
     font-size: 2.5rem;
 }
 
@@ -65,42 +73,115 @@ h2 {
     color: #21E18C;
 }
 
-.navigation input {
+.navigation div {
+    margin: 0 25%;
+}
+
+.navigation div input {
     background: #24323F;
     border: none;
-    padding: 10px 30px;
-    border-radius: 20px;
+    padding: 20px 100px;
+    border-radius: 30px;
     font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.navigation div input::placeholder {
+    font-size: 2rem;
+}
+
+.searchbar {
+    position: relative;
+}
+
+.glass {
+    font-size: 3rem;
+    color: #21E18C;
+    position: absolute;
+    left: 15px;
+    top: 25%;
 }
 
 /* ============================================
-                MAIN
+                    MAIN
 ============================================ */
 
 .main {
     background: rgb(39, 50, 62);
-    padding: 3%;
+    padding: 4%;
 }
 
 .main h1 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
+    margin: 5vh 0 8vh 0;
 }
 
 .movie-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(5, 1fr);
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-
-
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
 }
 
 /* ============================================
                 MAIN/MovieCard
 ============================================ */
+.moviecard {
+    width: 90%;
+}
 
 .moviecard img {
     width: 100%;
+}
+
+.moviecard h2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/* ============================================
+                    Footer
+============================================ */
+
+.footer {
+    padding: 3% 6%;
+    display: flex;
+    align-items: center;
+    background: #1A2634;
+    height: 20vh;
+}
+
+.footer h1 {
+    font-size: 5rem;
+    margin-right: 10vw;
+}
+
+.footer p {
+    margin-right: 15vw;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.footer h1 span {
+    color: #21E18C;
+}
+
+.footer div a:last-of-type {
+    color: rgb(39, 50, 62);
+}
+
+.insta {
+    font-size: 6rem;
+    color: #21E18C;
+    margin-right: 30px;
+}
+
+.fbook {
+    font-size: 5rem;
+    border: 1px 1px 0 1px solid #21E18C;
+    background-color: #21E18C;
+    border-radius: 5px;
+    padding: 5px 10px 0 10px;
 }
