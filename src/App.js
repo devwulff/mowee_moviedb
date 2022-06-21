@@ -1,7 +1,8 @@
+import './App.css';
 import { Routes, Route } from "react-router-dom";
-import "./App.css";
-import Details from "./components/Details";
 import Home from './pages/Home';
+import Details from './components/Details';
+import Filter from './components/Filter';
 
 function App() {
   return (
@@ -10,9 +11,11 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="details" element={<Details />} />
         <Route path="details/:id" element={<Details />} />
+        <Route path="filter" element={<Filter />} />
       </Routes>
     </div>
   );
 }
 
 export default App;
+

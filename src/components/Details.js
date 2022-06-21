@@ -27,6 +27,11 @@ const Details = () => {
             <h3>Überblick:</h3>
             <p>{details.overview}</p>
         </div>
+        {/* <div>
+            <Link to={details.homepage}>
+                <img src={`https://image.tmdb.org/t/p/w500${details.backdrop_path}`} alt="Foto zum Trailer" />
+            </Link>
+        </div> */}
         <Link to="/">Home</Link>
 
     </div>);
