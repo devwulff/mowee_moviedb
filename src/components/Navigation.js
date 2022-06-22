@@ -29,15 +29,14 @@ const Navigation = (props) => {
   return (
     <div className="navigation">
       {/* <h1>MoWee - Your Movie Search</h1> */}
-      <Link to={`/ `}>
+      <Link to={`/ `} className="headerLink">
         {/* <button className="button">HOME</button> */}
         <h1>
           <span>.</span>MOWEE
         </h1>
       </Link>
-      <div>
+      <div className="searchbar">
         <input
-          className="searchbar"
           type="text"
           name="search"
           id="searchbar"
