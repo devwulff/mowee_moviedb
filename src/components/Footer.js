@@ -10,7 +10,7 @@ const Footer = () => {
       </h1>
       <p>Imprint</p>
       <div>
-        <a target="_blank" href="https://www.instagram.com/moweedatabase/">
+        <a target="_blank" href="https://www.themoviedb.org/">
           <FontAwesomeIcon className="insta" icon={faInstagram} />
         </a>
         <a target="_blank" href="#">

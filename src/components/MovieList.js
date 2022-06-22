@@ -3,9 +3,10 @@ import MovieItem from "./MovieItem";
 
 const MovieList = (props) => {
   const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
-  // f609f173487177fd0f9d5d8e5193e2fe
+  // 2nd apiKey: f609f173487177fd0f9d5d8e5193e2fe
   const [details, setDetails] = useState([]);
   let link;
+  let headline;
 
   useEffect(() => {
     if (props.change) {
@@ -20,23 +21,44 @@ const MovieList = (props) => {
       });
   }, [props.change]);
 
-  return (
-    <main className="main">
-      <h1>Die 25 besten Filme aller Zeiten</h1>
-      <div className="movie-list">
-        {details.map((elt, i) => {
-          return (
-            <MovieItem
-              key={elt.id}
-              id={elt.id}
-              title={elt.title}
-              year={elt.release_date?.slice(0, 4)}
-              img={elt.poster_path}
-            />
-          );
-        })}
-      </div>
-    </main>
-  );
+  if (props.change) {
+    return (
+      <main className="main">
+        <h1>Ihre Suche</h1>
+        <div className="movie-list">
+          {details.map((elt, i) => {
+            return (
+              <MovieItem
+                key={elt.id}
+                id={elt.id}
+                title={elt.title}
+                year={elt.release_date?.slice(0, 4)}
+                img={elt.poster_path}
+              />
+            );
+          })}
+        </div>
+      </main>
+    );
+  } else {
+    return (
+      <main className="main">
+        <h1>Die 20 besten Filme aller Zeiten</h1>
+        <div className="movie-list">
+          {details.map((elt, i) => {
+            return (
+              <MovieItem
+                key={elt.id}
+                id={elt.id}
+                title={elt.title}
+                year={elt.release_date?.slice(0, 4)}
+                img={elt.poster_path}
+              />
+            );
+          })}
+        </div>
+      </main>
+    );
+  }
 };
 export default MovieList;

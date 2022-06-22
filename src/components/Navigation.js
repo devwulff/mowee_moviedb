@@ -3,10 +3,18 @@ import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
+// import PopularityAsc from "../components/PopularityAsc";
+// import Sidebar from "../components/Sidebar";
 
 const Navigation = (props) => {
   const [input, setInput] = useState("");
   const { id } = useParams();
+
+  const options = [
+    { value: <Link to={`/popularityAsc `} />, label: "Filter 1" },
+    { value: "strawberry", label: "Strawberry" },
+    { value: "vanilla", label: "Vanilla" },
+  ];
 
   useEffect(() => {
     if (input.length > 1) {
@@ -27,16 +35,13 @@ const Navigation = (props) => {
 
   return (
     <div className="navigation">
-      {/* <h1>MoWee - Your Movie Search</h1> */}
-      <Link to={`/ `}>
-        {/* <button className="button">HOME</button> */}
+      <Link to={`/ `} className="headerLink">
         <h1>
           <span>.</span>MOWEE
         </h1>
       </Link>
-      <div>
+      <div className="searchbar">
         <input
-          className="searchbar"
           type="text"
           name="search"
           id="searchbar"
@@ -45,6 +50,38 @@ const Navigation = (props) => {
         />
         <FontAwesomeIcon className="glass" icon={faMagnifyingGlass} />
       </div>
+      {/* <div className="hamburgermenu">
+        <Link to={`/popularityasc `}>
+          <h1>
+            <span>.</span>Beliebtheit aufsteigend
+          </h1>
+        </Link>
+        <Link to={`/popularitydesc `}>
+          <h1>
+            <span>.</span>Beliebtheit absteigend
+          </h1>
+        </Link>
+        <Link to={`/releaseasc `}>
+          <h1>
+            <span>.</span>Release Datum aufsteigend
+          </h1>
+        </Link>
+        <Link to={`/releasedesc `}>
+          <h1>
+            <span>.</span>Release Datum absteigend
+          </h1>
+        </Link>
+        <Link to={`/voteaverageasc `}>
+          <h1>
+            <span>.</span>Bewertung aufsteigend
+          </h1>
+        </Link>
+        <Link to={`/voteaveragedesc `}>
+          <h1>
+            <span>.</span>Bewertung absteigend
+          </h1>
+        </Link>
+      </div> */}
     </div>
   );
 };

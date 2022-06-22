@@ -45,11 +45,26 @@ h2 {
   color: #fff;
 }
 
+h3 {
+  font-family: "Anton", sans-serif;
+  color: #fff;
+  font-weight: 300;
+}
+
 p {
   font-family: "Roboto", sans-serif;
   font-weight: 200;
   font-size: 1.5rem;
   color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.6rem;
 }
 
 /* ============================================
@@ -87,6 +102,12 @@ p {
   font-size: 1.5rem;
 }
 
+.navigation div input[type="text"] {
+  font-size: 2rem;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
 .navigation div input::placeholder {
   font-size: 2rem;
 }
@@ -98,8 +119,9 @@ p {
 .glass {
   font-size: 3rem;
   color: #21e18c;
-  position: relative;
+  position: absolute;
   left: 15px;
+  top: 25%;
 }
 
 /* ============================================
@@ -182,4 +204,238 @@ p {
   background-color: #21e18c;
   border-radius: 5px;
   padding: 5px 10px 0 10px;
+}
+
+/* ============================================
+                DetailSite
+============================================ */
+
+.detailSite {
+  background: rgb(39, 50, 62);
+  padding: 4%;
+  color: white;
+}
+
+.detailSite h2 {
+  font-size: 4rem;
+  margin-bottom: 5vh;
+}
+
+.detailImg img {
+  margin-right: 5vw;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(5, 1fr); */
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  /* height: 70vh; */
+}
+
+.parent div {
+  margin-bottom: 10px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.div5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.div6 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.div7 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.div8 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.div9 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.div10 {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.detailWrapper {
+  display: flex;
+}
+
+.detailImg {
+  margin-right: 5vw;
+}
+
+.description h3 {
+  font-size: 2.5rem;
+}
+
+.description p {
+  font-size: 1.6rem;
+  display: inline;
+}
+
+.link {
+  color: white;
+  font-size: 2rem;
+}
+
+.gridPhone {
+  display: none;
+}
+
+/* ============================================
+                BurgerMenu
+============================================ */
+
+#page-wrap {
+  background: #1a2634;
+}
+
+/* ============================================
+                Media Queries
+============================================ */
+
+@media only screen and (max-width: 390px) and (max-height: 844px) {
+  /* ============================================
+                HEADER
+    ============================================ */
+
+  .navigation {
+    display: block;
+  }
+
+  .headerLink {
+    text-align: center;
+  }
+
+  .searchbar {
+    position: relative;
+    right: 70px;
+  }
+
+  .navigation div input {
+    background: #24323f;
+    border: none;
+    padding: 10px 60px;
+    border-radius: 30px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .glass {
+    font-size: 2rem;
+    color: #21e18c;
+    position: absolute;
+    left: 15px;
+    top: 25%;
+  }
+
+  /* ============================================
+                    Main
+    ============================================ */
+
+  #outer-container,
+  #page-wrap {
+    overflow: hidden;
+  }
+
+  .main {
+    text-align: center;
+  }
+
+  .movie-list {
+    display: block;
+  }
+
+  .moviecard {
+    width: 100%;
+  }
+
+  .moviecard h2 {
+    font-size: 3.5rem;
+  }
+
+  .moviecard p {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+
+  /* ============================================
+                    Footer
+    ============================================ */
+
+  .footer {
+    display: block;
+    text-align: center;
+    height: 100%;
+  }
+
+  .footer h1 {
+    margin: 0;
+  }
+
+  .footer p {
+    margin: 0;
+  }
+
+  .insta {
+    margin: 10px 15px 0 0;
+  }
+
+  /* ============================================
+                DetailSite
+    ============================================ */
+
+  .detailSite {
+    padding: 4%;
+    text-align: center;
+    overflow: hidden;
+  }
+
+  .detailSite h2 {
+    font-size: 3.5rem;
+    margin-bottom: 2vh;
+  }
+
+  .detailWrapper {
+    display: none;
+  }
+
+  .gridPhone {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .gridPhone img {
+    width: 100%;
+  }
+
+  .gridPhone h3 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
 }

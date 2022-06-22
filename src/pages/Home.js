@@ -2,6 +2,7 @@ import { useState } from "react";
 import MovieList from "./../components/MovieList";
 import Navigation from "./../components/Navigation";
 import Footer from "./../components/Footer";
+import Sidebar from "../components/Sidebar";
 // import Filter from "./../components/Filter";
 
 const Home = () => {
@@ -11,11 +12,16 @@ const Home = () => {
   };
 
   return (
-    <div>
-      <Navigation onChange={handleOnChange} />
-      {/* <Filter /> */}
-      <MovieList change={change} />
-      <Footer />
+    <div id="outer-container">
+      <div id="page-wrap">
+        <Sidebar
+          pageWrapId={"page-wrap"}
+          outerContainerId={"outer-cobtainer"}
+        />
+        <Navigation onChange={handleOnChange} />
+        <MovieList change={change} />
+        <Footer />
+      </div>
     </div>
   );
 };

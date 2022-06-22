@@ -21,9 +21,10 @@ const Trailer = () => {
             elt.name === "Trailer"
           ) {
             return (
-              <div key={i}>
+              <div key={i} className="trailer">
                 <h3>Trailer</h3>
                 <iframe
+                  className="trailerWrapper"
                   width="560"
                   height="315"
                   src={`https://www.youtube.com/embed/${elt.key}?vq=hd1080`}
@@ -32,14 +33,6 @@ const Trailer = () => {
                   allow="accelerometer; autoplay; encrypted-media; gyroscope;"
                   allowFullScreen
                 ></iframe>
-                {/* <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${elt.key}?vq=hd1080&hl=de-DE&color=white`}
-                  width="560"
-                  height="315"
-                  title="Trailer Player"
-                  frameBorder="0"
-                  allowfullscreen
-                ></iframe> */}
               </div>
             );
           }
