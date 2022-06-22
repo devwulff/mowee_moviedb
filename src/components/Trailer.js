@@ -21,9 +21,9 @@ const Trailer = () => {
             elt.name === "Trailer"
           ) {
             return (
-              <div key={i}>
+              <div key={i} className="trailer">
                 <h3>Trailer</h3>
-                <iframe
+                <iframe className="trailerWrapper"
                   width="560"
                   height="315"
                   src={`https://www.youtube.com/embed/${elt.key}?vq=hd1080`}

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Trailer from "./Trailer";
 import Genres from "./Genres";
 import Navigation from "./Navigation";
+import Footer from "./Footer";
 
 const Details = () => {
   const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
@@ -34,38 +35,57 @@ const Details = () => {
     return (
       <div>
         <Navigation />
-        <h2>{details.title}</h2>
-        <div>
-          <img
-            src={`https://image.tmdb.org/t/p/w500${details.poster_path}`}
-            alt="Foto zum Film"
-          />
-          <div>
-            <div>
-              <h3>Erscheinungsdatum:</h3>
-              <p>{details.release_date}</p>
+        <section className="detailSite">
+          <h2>{details.title}</h2>
+          <div className="detailWrapper">
+            <div className="detailImg">
+              <img
+                src={`https://image.tmdb.org/t/p/w500${details.poster_path}`}
+                alt="Foto zum Film"
+              />
             </div>
-            <div>
-              <h3>Genres:</h3>
-              <Genres />
+            <div className="description">
+              <div className="parent">
+                <div className="div1"><h3>Erscheinungsdatum:</h3></div>
+                <div className="div2"><p>{details.release_date}</p></div>
+                <div className="div3"><h3>Genres:</h3> </div>
+                <div className="div4"><Genres /></div>
+                <div className="div5"><h3>Original Titel:</h3></div>
+                <div className="div6"><p>{details.original_title}</p></div>
+                <div className="div7"><h3>Überblick:</h3></div>
+                <div className="div8"><p>{details.overview}</p> </div>
+                <div className="div9"><h3>ø Bewertung:</h3></div>
+                <div className="div10"><p>{details.vote_average}</p></div>
+              </div>
+              <div>
+                <Trailer />
+                <Link className="link" to="/filter">Zurück zur Auswahl</Link>
+              </div>
             </div>
-            <div>
-              <h3>Original Titel:</h3>
-              <p>{details.original_title}</p>
-            </div>
-            <div>
-              <h3>Überblick:</h3>
-              <p>{details.overview}</p>
-            </div>
-            <div>
-              <h3>Durchschnittliche Bewertung:</h3>
-              <p>{details.vote_average}</p>
-            </div>
-            <Trailer />
-            <Link to="/filter">Zurück zur Auswahl</Link>
           </div>
-        </div>
-      </div>
+          <div className="gridPhone">
+            <img
+              src={`https://image.tmdb.org/t/p/w500${details.poster_path}`}
+              alt="Foto zum Film"
+            />
+            <div><h3>Erscheinungsdatum:</h3></div>
+            <div><p>{details.release_date}</p></div>
+            <div><h3>Genres:</h3> </div>
+            <div><Genres /></div>
+            <div><h3>Original Titel:</h3></div>
+            <div><p>{details.original_title}</p></div>
+            <div><h3>Überblick:</h3></div>
+            <div><p>{details.overview}</p> </div>
+            <div><h3>ø Bewertung:</h3></div>
+            <div ><p>{details.vote_average}</p></div>
+            {/* <div className="phoneTrailer">
+              <Trailer />
+              <Link className="link" to="/filter">Zurück zur Auswahl</Link>
+            </div> */}
+          </div>
+        </section >
+        <Footer />
+      </div >
     );
   }
 };

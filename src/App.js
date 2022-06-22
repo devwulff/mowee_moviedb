@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Details from "./components/Details";
 import Filter from "./components/Filter";
+import Sidebar from './components/Sidebar';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
         <Route path="details/:id" element={<Details />} />
         <Route path="filter" element={<Filter />} />
       </Routes>
-    </div>
+    </div >
   );
 }
 
