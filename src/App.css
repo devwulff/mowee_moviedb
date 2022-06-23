@@ -370,6 +370,38 @@ ul {
 }
 
 /* ============================================
+                Imprint
+============================================ */
+
+.Imprint {
+  background: rgb(39, 50, 62);
+  text-align: center;
+  padding: 10vh 0;
+}
+
+.ImprintHeadline {
+  font-size: 3rem;
+}
+
+.teamHeadline {
+  padding: 2vh 0;
+  font-size: 2rem;
+}
+
+.Team {
+  display: flex;
+  justify-content: space-between;
+  margin: 2vh 20vw;
+}
+
+.Team div p:first-of-type {
+  color: #21e18c;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Anton', sans-serif;
+}
+
+/* ============================================
                 Media Queries
 ============================================ */
 

@@ -12,14 +12,11 @@ const Footer = () => {
           <span>.</span>MOWEE
         </h1>
       </Link>
-      <p>Imprint</p>
+      <Link to={`/imprint `}>
+        <p>Imprint</p>
+      </Link>
       <div>
         {/* eslint-disable-next-line */}
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.themoviedb.org/"
-        ></a>
         <a
           target="_blank"
           rel="noreferrer"
@@ -31,9 +28,12 @@ const Footer = () => {
           <FontAwesomeIcon className="fbook" icon={faFacebookF} />
         </a>
       </div>
-      <div className="tmdblogo">
-        <img className="tmdbpic" src={tmbdlogo} alt="TmDB Logo" />
-      </div>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.themoviedb.org/"
+        className="tmdblogo"
+      ><img className="tmdbpic" src={tmbdlogo} alt="TmDB Logo" /></a>
     </footer>
   );
 };
