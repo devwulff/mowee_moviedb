@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
 import Navigation from "./Navigation";
+import Sidebar from "../components/Sidebar";
 
 const VoteAverageAsc = () => {
   const [voteAvgAsc, setVoteAvgAsc] = useState([]);
@@ -15,23 +16,28 @@ const VoteAverageAsc = () => {
   }, []);
 
   return (
-    <main className="main">
-      <Navigation />
-      <h1>Die 20 schlechtesten Filme</h1>
-      <div className="movie-list">
-        {voteAvgAsc.map((elt, i) => {
-          return (
-            <MovieItem
-              key={elt.id}
-              id={elt.id}
-              title={elt.title}
-              year={elt.release_date?.slice(0, 4)}
-              img={elt.poster_path}
-            />
-          );
-        })}
+    <div id="outer-container">
+      <div id="page-wrap">
+        <Sidebar />
+        <Navigation />
+        <main className="main">
+          <h1>Die 20 schlechtesten Filme</h1>
+          <div className="movie-list">
+            {voteAvgAsc.map((elt, i) => {
+              return (
+                <MovieItem
+                  key={elt.id}
+                  id={elt.id}
+                  title={elt.title}
+                  year={elt.release_date?.slice(0, 4)}
+                  img={elt.poster_path}
+                />
+              );
+            })}
+          </div>
+        </main>
       </div>
-    </main>
+    </div>
   );
 };
 

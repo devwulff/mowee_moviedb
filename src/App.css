@@ -151,12 +151,13 @@ ul {
 
 .main {
   background: rgb(39, 50, 62);
-  padding: 4%;
+  /* padding: 4%; */
 }
 
 .main h1 {
   font-size: 3.5rem;
-  margin: 5vh 0 8vh 0;
+  margin: 5vh 0 4vh 4%;
+  padding-top: 5vh;
 }
 
 .movie-list {
@@ -164,6 +165,7 @@ ul {
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  padding: 4%;
 }
 
 /* ============================================

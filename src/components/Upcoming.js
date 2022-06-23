@@ -18,12 +18,9 @@ const Upcoming = () => {
   return (
     <div id="outer-container">
       <div id="page-wrap">
-        <Sidebar
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-cobtainer"}
-        />
+        <Sidebar />
+        <Navigation />
         <main className="main">
-          <Navigation />
           <h1>Neuerscheinungen</h1>
           <div className="movie-list">
             {upComing.map((elt, i) => {

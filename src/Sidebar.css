@@ -1,5 +1,4 @@
 .bm-burger-button {
-<<<<<<< HEAD
   position: absolute;
   width: 36px;
   height: 30px;
@@ -72,77 +71,3 @@
     left: 85vw;
   }
 }
-=======
-    position: absolute;
-    width: 36px;
-    height: 30px;
-    left: 90vw;
-    top: 60px;
-}
-
-.bm-burger-bars {
-    background: #21E18C;
-}
-
-.bm-buger-bars-hover {
-    color: #21e18b5b;
-}
-
-.bm-cross-button {
-    height: 24px;
-    width: 24px;
-}
-
-.bm-cross {
-    background: #1A2634;
-}
-
-.bm-menu-wrap {
-    position: fixed;
-    height: 100%;
-}
-
-.bm-menu {
-    background: #1A2634;
-    padding: 20px 70px 0 40px;
-    font-size: 2rem;
-}
-
-.bm-morph-shape {
-    fill: #21E18C;
-}
-
-.bm-item-list {
-    color: #b8b7ad;
-    padding: 0.8em;
-}
-
-.bm-item {
-    display: inline-block;
-    color: #d1d1d1;
-    margin-bottom: 25px;
-    text-align: left;
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-.bm-item:hover {
-    color: #21E18C;
-}
-
-.bm-overlay {
-    background: rgba(0, 0, 0, 1);
-}
-
-/* ============================================
-                Media Queries
-============================================ */
-
-@media only screen and (max-width: 390px) and (max-height: 844px) {
-    .bm-burger-button {
-        position: absolute;
-        top: 40px;
-        left: 85vw;
-    }
-}
->>>>>>> alex

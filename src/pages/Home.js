@@ -3,8 +3,6 @@ import MovieList from "./../components/MovieList";
 import Navigation from "./../components/Navigation";
 import Footer from "./../components/Footer";
 import Sidebar from "../components/Sidebar";
-// import Filter from "./../components/Filter";
-import Sidebar from '../components/Sidebar';
 
 const Home = () => {
   const [change, setChange] = useState("");
@@ -17,7 +15,7 @@ const Home = () => {
       <div id="page-wrap">
         <Sidebar
           pageWrapId={"page-wrap"}
-          outerContainerId={"outer-cobtainer"}
+          outerContainerId={"outer-container"}
         />
         <Navigation onChange={handleOnChange} />
         <MovieList change={change} />
