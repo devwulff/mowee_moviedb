@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
 import Navigation from "./Navigation";
 import Sidebar from "../components/Sidebar";
+import Footer from "./Footer";
 
 const Upcoming = () => {
   const [upComing, setUpcoming] = useState([]);
@@ -18,12 +19,9 @@ const Upcoming = () => {
   return (
     <div id="outer-container">
       <div id="page-wrap">
-        <Sidebar
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-cobtainer"}
-        />
+        <Sidebar />
+        <Navigation />
         <main className="main">
-          <Navigation />
           <h1>Neuerscheinungen</h1>
           <div className="movie-list">
             {upComing.map((elt, i) => {
@@ -39,6 +37,7 @@ const Upcoming = () => {
             })}
           </div>
         </main>
+        <Footer />
       </div>
     </div>
   );

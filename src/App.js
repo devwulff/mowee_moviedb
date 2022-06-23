@@ -11,8 +11,7 @@ import ReleaseAsc from "./components/ReleaseAsc";
 import ReleaseDesc from "./components/ReleaseDesc";
 import VoteAverageAsc from "./components/VoteAverageAsc";
 import VoteAverageDesc from "./components/VoteAverageDesc";
-// import Filter from "./components/Filter";
-// import Sidebar from './components/Sidebar';
+import NavigationDetails from "./components/NavigationDetails";
 
 function App() {
   return (
@@ -20,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/home" element={<Home />} />
+        <Route path="/navigationDetails" element={<NavigationDetails />} />
         <Route path="/landing" element={<Landing />} />
         <Route path="/details" element={<Details />} />
         <Route path="/details/:id" element={<Details />} />

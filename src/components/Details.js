@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Trailer from "./Trailer";
 import Genres from "./Genres";
-import Navigation from "./Navigation";
+import NavigationDetails from "./NavigationDetails";
 import Footer from "./Footer";
 
 const Details = () => {
@@ -22,19 +22,25 @@ const Details = () => {
   if (details.success === false) {
     return (
       <div>
-        <Navigation />
-        <p>Leider keine Details</p>
-        <img
-          src="https://images.unsplash.com/photo-1600614883406-1b18a45d8e4d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2787&q=80"
-          alt="Foto zum Film"
-        />
-        <Link to="/">Zurück zur Auswahl</Link>
+        <div>
+          <NavigationDetails />
+          <p>Leider keine Details</p>
+          <img
+            src="https://cdn.discordapp.com/attachments/988351130201362432/989072612938375189/Fallback_Film_0.png.jpg"
+            alt="Foto zum Film"
+          />
+        </div>
+        <div className="linkContainer">
+          <Link className="link" to="/">
+            Zurück zur Auswahl
+          </Link>
+        </div>
       </div>
     );
   } else if (details.poster_path == null) {
     return (
       <div>
-        <Navigation />
+        <NavigationDetails />
         <section className="detailSite">
           <h2>{details.title}</h2>
           <div className="detailWrapper">
@@ -79,11 +85,13 @@ const Details = () => {
               </div>
               <div>
                 <Trailer />
-                <Link className="link" to="/filter">
-                  Zurück zur Auswahl
-                </Link>
               </div>
             </div>
+          </div>
+          <div className="linkContainer">
+            <Link className="link" to="/">
+              Zurück zur Auswahl
+            </Link>
           </div>
           <div className="gridPhone">
             <img
@@ -128,7 +136,7 @@ const Details = () => {
   } else {
     return (
       <div>
-        <Navigation />
+        <NavigationDetails />
         <section className="detailSite">
           <h2>{details.title}</h2>
           <div className="detailWrapper">
@@ -173,11 +181,13 @@ const Details = () => {
               </div>
               <div>
                 <Trailer />
-                <Link className="link" to="/">
-                  Zurück zur Auswahl
-                </Link>
               </div>
             </div>
+          </div>
+          <div className="linkContainer">
+            <Link className="link" to="/">
+              Zurück zur Auswahl
+            </Link>
           </div>
           <div className="gridPhone">
             <img

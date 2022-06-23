@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
 import Navigation from "./Navigation";
+import Sidebar from "./Sidebar";
+import Footer from "./Footer";
 
 const PopularityDesc = () => {
   const [popularityDesc, setPopularityDesc] = useState([]);
@@ -15,23 +17,29 @@ const PopularityDesc = () => {
   }, []);
 
   return (
-    <main className="main">
-      <Navigation />
-      <h1>Die 20 populärsten Filme</h1>
-      <div className="movie-list">
-        {popularityDesc.map((elt, i) => {
-          return (
-            <MovieItem
-              key={elt.id}
-              id={elt.id}
-              title={elt.title}
-              year={elt.release_date?.slice(0, 4)}
-              img={elt.poster_path}
-            />
-          );
-        })}
+    <div id="outer-container">
+      <div id="page-wrap">
+        <Sidebar />
+        <Navigation />
+        <main className="main">
+          <h1>Die 20 populärsten Filme</h1>
+          <div className="movie-list">
+            {popularityDesc.map((elt, i) => {
+              return (
+                <MovieItem
+                  key={elt.id}
+                  id={elt.id}
+                  title={elt.title}
+                  year={elt.release_date?.slice(0, 4)}
+                  img={elt.poster_path}
+                />
+              );
+            })}
+          </div>
+        </main>
+        <Footer />
       </div>
-    </main>
+    </div>
   );
 };
 

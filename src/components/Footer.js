@@ -28,8 +28,8 @@ const Footer = () => {
           <FontAwesomeIcon className="fbook" icon={faFacebookF} />
         </a>
       </div>
-      <div>
-        <img className="tmdblogo" src={tmbdlogo} alt="TmDB Logo" />
+      <div className="tmdblogo">
+        <img className="tmdbpic" src={tmbdlogo} alt="TmDB Logo" />
       </div>
     </footer>
   );

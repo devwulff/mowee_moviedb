@@ -28,7 +28,7 @@ const Sidebar = (props) => {
         ø Bewertung Aufsteigend
       </Link>
       <Link className="menu-item" to="/voteaveragedesc">
-        ø Bewertung Aufsteigend
+        ø Bewertung Absteigend
       </Link>
     </Menu>
   );

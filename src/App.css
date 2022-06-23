@@ -191,6 +191,7 @@ ul {
 .footer {
   padding: 3% 6%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   background: #1a2634;
   height: 20vh;
@@ -198,11 +199,11 @@ ul {
 
 .footer h1 {
   font-size: 5rem;
-  margin-right: 10vw;
+  /* margin-right: 10vw; */
 }
 
 .footer p {
-  margin-right: 15vw;
+  /* margin-right: 15vw; */
   font-size: 2rem;
   font-weight: 300;
 }
@@ -227,6 +228,11 @@ ul {
   background-color: #21e18c;
   border-radius: 5px;
   padding: 5px 10px 0 10px;
+}
+
+.tmdbpic {
+  margin: 3px 0 0 0;
+  width: 75px;
 }
 
 /* ============================================
@@ -321,6 +327,15 @@ ul {
   font-size: 2rem;
 }
 
+.linkContainer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.detailSite .link:hover {
+  color: #21e18c;
+}
+
 .gridPhone {
   display: none;
 }
@@ -369,6 +384,7 @@ ul {
   .navigation div input {
     background: #24323f;
     border: none;
+    margin: 25px 0 0 0;
     padding: 10px 60px;
     border-radius: 30px;
     font-family: "Roboto", sans-serif;
@@ -381,7 +397,7 @@ ul {
     color: #21e18c;
     position: absolute;
     left: 15px;
-    top: 25%;
+    top: 52%;
   }
 
   /* ============================================
@@ -434,6 +450,11 @@ ul {
 
   .insta {
     margin: 10px 15px 0 0;
+  }
+
+  .tmdblogo {
+    margin: 30px 0 20px 0;
+    width: 40%;
   }
 
   /* ============================================

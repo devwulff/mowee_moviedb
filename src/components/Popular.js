@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
 import Navigation from "./Navigation";
 import Sidebar from "../components/Sidebar";
+import Footer from "./Footer";
 
 const Popular = () => {
   const [popular, setPopular] = useState([]);
@@ -18,25 +19,25 @@ const Popular = () => {
   return (
     <div id="outer-container">
       <div id="page-wrap">
-        <Sidebar
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-cobtainer"}
-        />
+        <Sidebar />
         <Navigation />
-        <h1>Neuerscheinungen</h1>
-        <div className="movie-list">
-          {popular.map((elt, i) => {
-            return (
-              <MovieItem
-                key={elt.id}
-                id={elt.id}
-                title={elt.title}
-                year={elt.release_date.slice(0, 4)}
-                img={elt.poster_path}
-              />
-            );
-          })}
-        </div>
+        <main className="main">
+          <h1>Am Beliebtesten</h1>
+          <div className="movie-list">
+            {popular.map((elt, i) => {
+              return (
+                <MovieItem
+                  key={elt.id}
+                  id={elt.id}
+                  title={elt.title}
+                  year={elt.release_date.slice(0, 4)}
+                  img={elt.poster_path}
+                />
+              );
+            })}
+          </div>
+        </main>
+        <Footer />
       </div>
     </div>
   );
