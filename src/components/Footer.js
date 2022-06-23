@@ -2,21 +2,21 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import tmbdlogo from "../images/logo_the_movie_db.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <h1>
-        <span>.</span>MOWEE
-      </h1>
-      <p>Imprint</p>
+      <Link to={`/home `} className="headerLink">
+        <h1>
+          <span>.</span>MOWEE
+        </h1>
+      </Link>
+      <Link to={`/imprint `}>
+        <p>Imprint</p>
+      </Link>
       <div>
         {/* eslint-disable-next-line */}
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.themoviedb.org/"
-        ></a>
         <a
           target="_blank"
           rel="noreferrer"
@@ -28,9 +28,12 @@ const Footer = () => {
           <FontAwesomeIcon className="fbook" icon={faFacebookF} />
         </a>
       </div>
-      <div className="tmdblogo">
-        <img className="tmdbpic" src={tmbdlogo} alt="TmDB Logo" />
-      </div>
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href="https://www.themoviedb.org/"
+        className="tmdblogo"
+      ><img className="tmdbpic" src={tmbdlogo} alt="TmDB Logo" /></a>
     </footer>
   );
 };

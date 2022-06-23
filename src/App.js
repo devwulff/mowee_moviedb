@@ -3,6 +3,7 @@ import "./App.css";
 import Home from "./pages/Home";
 import Home2 from "./pages/Home2";
 import Details from "./components/Details";
+import Imprint from "./components/Imprint";
 import Upcoming from "./components/Upcoming";
 import Popular from "./components/Popular";
 import PopularityAsc from "./components/PopularityAsc";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/navigationDetails" element={<NavigationDetails />} />
         <Route path="/details" element={<Details />} />
         <Route path="/details/:id" element={<Details />} />
+        <Route path="/imprint" element={<Imprint />} />
         <Route path="/upcoming" element={<Upcoming />} />
         <Route path="/popular" element={<Popular />} />
         <Route path="/popularityasc" element={<PopularityAsc />} />
