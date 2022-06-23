@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
-import Navigation from "./Navigation";
+import NavigationDetails from "./NavigationDetails";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
@@ -20,7 +20,7 @@ const PopularityAsc = () => {
     <div id="outer-container">
       <div id="page-wrap">
         <Sidebar />
-        <Navigation />
+        <NavigationDetails />
         <main className="main">
           <h1>Die 20 unpopulärsten Filme</h1>
           <div className="movie-list">

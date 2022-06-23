@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
-import Navigation from "./Navigation";
+import NavigationDetails from "./NavigationDetails";
 import Sidebar from "../components/Sidebar";
 import Footer from "./Footer";
 
-const Popular = () => {
+const Popular = (props) => {
   const [popular, setPopular] = useState([]);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Popular = () => {
     <div id="outer-container">
       <div id="page-wrap">
         <Sidebar />
-        <Navigation />
+        <NavigationDetails />
         <main className="main">
           <h1>Am Beliebtesten</h1>
           <div className="movie-list">

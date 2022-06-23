@@ -24,7 +24,6 @@ const Home = () => {
         <div className="landingpage">
           <ReactPlayer
             muted
-            onReady={true}
             playing={true}
             url={intro2}
             width={1280}

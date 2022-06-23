@@ -269,6 +269,7 @@ ul {
   grid-template-columns: 0.6fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  align-items: center;
 }
 
 .parent div {
