@@ -22,7 +22,7 @@ const Navigation = (props) => {
 
   return (
     <div className="navigation">
-      <Link to={`/ `} className="headerLink">
+      <Link to={`/home `} className="headerLink">
         <h1>
           <span>.</span>MOWEE
         </h1>

@@ -151,12 +151,13 @@ ul {
 
 .main {
   background: rgb(39, 50, 62);
-  padding: 4%;
+  /* padding: 4%; */
 }
 
 .main h1 {
   font-size: 3.5rem;
-  margin: 5vh 0 8vh 0;
+  margin: 5vh 0 4vh 4%;
+  padding-top: 5vh;
 }
 
 .movie-list {
@@ -164,6 +165,7 @@ ul {
   grid-template-columns: repeat(5, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  padding: 4%;
 }
 
 /* ============================================
@@ -248,11 +250,9 @@ ul {
 
 .parent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(5, 1fr); */
+  grid-template-columns: 0.6fr 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-  /* height: 70vh; */
 }
 
 .parent div {
@@ -326,101 +326,14 @@ ul {
 }
 
 /* ============================================
-                DetailSite
+                Landingpage
 ============================================ */
-
-.detailSite {
-  background: rgb(39, 50, 62);
-  padding: 4%;
-  color: white;
-}
-
-.detailSite h2 {
-  font-size: 4rem;
-  margin-bottom: 5vh;
-}
-
-.detailImg img {
-  margin-right: 5vw;
-}
-
-.parent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(5, 1fr); */
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  /* height: 70vh; */
-}
-
-.parent div {
-  margin-bottom: 10px;
-}
-
-.div1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-.div2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-.div3 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.div4 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.div5 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-.div6 {
-  grid-area: 3 / 2 / 4 / 3;
-}
-
-.div7 {
-  grid-area: 4 / 1 / 5 / 2;
-}
-
-.div8 {
-  grid-area: 4 / 2 / 5 / 3;
-}
-
-.div9 {
-  grid-area: 5 / 1 / 6 / 2;
-}
-
-.div10 {
-  grid-area: 5 / 2 / 6 / 3;
-}
-
-.detailWrapper {
+.landingpage {
+  height: 100vh;
   display: flex;
-}
-
-.detailImg {
-  margin-right: 5vw;
-}
-
-.description h3 {
-  font-size: 2.5rem;
-}
-
-.description p {
-  font-size: 1.6rem;
-  display: inline;
-}
-
-.link {
-  color: white;
-  font-size: 2rem;
-}
-
-.gridPhone {
-  display: none;
+  justify-content: center;
+  align-items: center;
+  background: #000;
 }
 
 /* ============================================
@@ -506,10 +419,9 @@ ul {
     ============================================ */
 
   .footer {
-    display: flex;
+    display: block;
     text-align: center;
     height: 100%;
-    justify-content: space-evenly;
   }
 
   .footer h1 {
@@ -522,11 +434,6 @@ ul {
 
   .insta {
     margin: 10px 15px 0 0;
-  }
-
-  .tmdblogo {
-    width: 100px;
-    height: 100px;
   }
 
   /* ============================================

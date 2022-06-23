@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
+import Landing from "./pages/Landing";
 import Details from "./components/Details";
 import Upcoming from "./components/Upcoming";
 import Popular from "./components/Popular";
@@ -17,7 +18,9 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/landing" element={<Landing />} />
         <Route path="/details" element={<Details />} />
         <Route path="/details/:id" element={<Details />} />
         <Route path="/upcoming" element={<Upcoming />} />
