@@ -26,12 +26,12 @@ const Details = () => {
           <NavigationDetails />
           <p>Leider keine Details</p>
           <img
-            src="https://cdn.discordapp.com/attachments/988351130201362432/989072612938375189/Fallback_Film_0.png.jpg"
+            src="https://images.unsplash.com/photo-1604975701397-6365ccbd028a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2835&q=80"
             alt="Foto zum Film"
           />
         </div>
         <div className="linkContainer">
-          <Link className="link" to="/">
+          <Link className="link" to="/home">
             Zurück zur Auswahl
           </Link>
         </div>
@@ -185,7 +185,7 @@ const Details = () => {
             </div>
           </div>
           <div className="linkContainer">
-            <Link className="link" to="/">
+            <Link className="link" to="/home">
               Zurück zur Auswahl
             </Link>
           </div>

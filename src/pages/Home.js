@@ -8,13 +8,9 @@ import ReactPlayer from "react-player";
 
 const Home = () => {
   const [intro, setIntro] = useState(true);
-  // const showVideo = document.querySelector(".landingpage");
-  // console.log(showVideo);
 
   window.setTimeout(function () {
     setIntro(false);
-    // showVideo.classList.add("hideVideo");
-    // console.log(showVideo);
   }, 5700);
 
   const [change, setChange] = useState("");

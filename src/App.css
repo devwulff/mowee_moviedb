@@ -188,6 +188,12 @@ ul {
   font-weight: 300;
 }
 
+.placeholderimg {
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* ============================================
                     Footer
 ============================================ */
