@@ -2,13 +2,12 @@ import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
 
 const MovieList = (props) => {
-  const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
-  // 2nd apiKey: f609f173487177fd0f9d5d8e5193e2fe
   const [details, setDetails] = useState([]);
-  let link;
-  let headline;
 
   useEffect(() => {
+    const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
+    // 2nd apiKey: f609f173487177fd0f9d5d8e5193e2fe
+    let link;
     if (props.change) {
       link = `https://api.themoviedb.org/3/search/movie?&query=${props.change}&api_key=${apiKey}&language=de-DE&page=1&include_adult=false`;
     } else {

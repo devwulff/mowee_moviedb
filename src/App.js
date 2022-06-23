@@ -2,7 +2,6 @@ import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./pages/Home";
 import Details from "./components/Details";
-import Filter from "./components/Filter";
 import Upcoming from "./components/Upcoming";
 import Popular from "./components/Popular";
 import PopularityAsc from "./components/PopularityAsc";
@@ -19,7 +18,6 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="details" element={<Details />} />
         <Route path="details/:id" element={<Details />} />
-        <Route path="filter" element={<Filter />} />
         <Route path="upcoming" element={<Upcoming />} />
         <Route path="popular" element={<Popular />} />
         <Route path="popularityasc" element={<PopularityAsc />} />

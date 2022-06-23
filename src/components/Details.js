@@ -7,11 +7,11 @@ import Navigation from "./Navigation";
 import Footer from "./Footer";
 
 const Details = () => {
-  const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
   const { id } = useParams();
   const [details, setDetails] = useState([]);
 
   useEffect(() => {
+    const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
     fetch(
       `https://api.themoviedb.org/3/movie/${id}?api_key=${apiKey}&language=de-DE`
     )
@@ -19,7 +19,7 @@ const Details = () => {
       .then((json) => setDetails(json));
   }, [id]);
 
-  if (details.success == false) {
+  if (details.success === false) {
     return (
       <div>
         <Navigation />

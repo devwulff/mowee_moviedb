@@ -4,10 +4,10 @@ import Navigation from "./Navigation";
 import Sidebar from "../components/Sidebar";
 
 const Upcoming = () => {
-  const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
   const [upComing, setUpcoming] = useState([]);
 
   useEffect(() => {
+    const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
     fetch(
       `https://api.themoviedb.org/3/movie/upcoming?api_key=${apiKey}&language=de-DE&page=1`
     )

@@ -2,11 +2,11 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 const Trailer = () => {
-  const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
   const { id } = useParams();
   const [trailer, setTrailer] = useState([]);
 
   useEffect(() => {
+    const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
     fetch(`https://api.themoviedb.org/3/movie/${id}/videos?&api_key=${apiKey}`)
       .then((response) => response.json())
       .then((json) => setTrailer(json.results));
@@ -15,6 +15,7 @@ const Trailer = () => {
   return (
     <div>
       <div>
+        {/* eslint-disable-next-line */}
         {trailer.map((elt, i) => {
           if (
             (elt.type === "Trailer" && elt.name === "Official Trailer") ||

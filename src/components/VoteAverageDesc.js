@@ -3,10 +3,10 @@ import MovieItem from "./MovieItem";
 import Navigation from "./Navigation";
 
 const VoteAverageDesc = () => {
-  const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
   const [voteAvgDesc, setVoteAvgDesc] = useState([]);
 
   useEffect(() => {
+    const apiKey = `80fc0be7bcb18707550c86f288ec17fe`;
     fetch(
       `https://api.themoviedb.org/3/discover/movie?api_key=${apiKey}&language=de-DE&sort_by=vote_average.desc&include_adult=false&include_video=false&page=1&with_watch_monetization_types=flatrate`
     )
