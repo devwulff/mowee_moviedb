@@ -4,7 +4,7 @@
 
 /* Fonts */
 
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@100;300;400;500&display=swap');
 
 /* 
 font-family: 'Anton', sans-serif;
@@ -35,14 +35,20 @@ html {
 }
 
 h1 {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   color: #fff;
   font-weight: 400;
 }
 
 h2 {
-  font-family: "Anton", sans-serif;
+  font-family: 'Anton', sans-serif;
   color: #fff;
+}
+
+h3 {
+  font-family: 'Anton', sans-serif;
+  color: #fff;
+  font-weight: 300;
 }
 
 h3 {
@@ -52,10 +58,19 @@ h3 {
 }
 
 p {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 200;
   font-size: 1.5rem;
   color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  font-size: 1.6rem;
 }
 
 a {
@@ -74,7 +89,7 @@ ul {
 .navigation {
   display: flex;
   align-items: center;
-  background: #1a2634;
+  background: #1A2634;
   height: 20vh;
   padding: 4%;
 }
@@ -85,7 +100,7 @@ ul {
 }
 
 .navigation h1 span {
-  color: #21e18c;
+  color: #21E18C;
 }
 
 .navigation div {
@@ -93,13 +108,19 @@ ul {
 }
 
 .navigation div input {
-  background: #24323f;
+  background: #24323F;
   border: none;
   padding: 20px 100px;
   border-radius: 30px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 1.5rem;
+}
+
+.navigation div input[type="text"] {
+  font-size: 2rem;
+  color: white;
+  font-family: 'Roboto', sans-serif;
 }
 
 .navigation div input[type="text"] {
@@ -169,7 +190,7 @@ ul {
   padding: 3% 6%;
   display: flex;
   align-items: center;
-  background: #1a2634;
+  background: #1A2634;
   height: 20vh;
 }
 
@@ -185,7 +206,7 @@ ul {
 }
 
 .footer h1 span {
-  color: #21e18c;
+  color: #21E18C;
 }
 
 .footer div a:last-of-type {
@@ -194,16 +215,117 @@ ul {
 
 .insta {
   font-size: 6rem;
-  color: #21e18c;
+  color: #21E18C;
   margin-right: 30px;
 }
 
+
 .fbook {
   font-size: 5rem;
-  border: 1px 1px 0 1px solid #21e18c;
-  background-color: #21e18c;
+  border: 1px 1px 0 1px solid #21E18C;
+  background-color: #21E18C;
   border-radius: 5px;
   padding: 5px 10px 0 10px;
+}
+
+/* ============================================
+                DetailSite
+============================================ */
+
+.detailSite {
+  background: rgb(39, 50, 62);
+  padding: 4%;
+  color: white;
+}
+
+.detailSite h2 {
+  font-size: 4rem;
+  margin-bottom: 5vh;
+}
+
+.detailImg img {
+  margin-right: 5vw;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-rows: repeat(5, 1fr); */
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  /* height: 70vh; */
+}
+
+.parent div {
+  margin-bottom: 10px;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.div3 {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.div4 {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.div5 {
+  grid-area: 3 / 1 / 4 / 2;
+}
+
+.div6 {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.div7 {
+  grid-area: 4 / 1 / 5 / 2;
+}
+
+.div8 {
+  grid-area: 4 / 2 / 5 / 3;
+}
+
+.div9 {
+  grid-area: 5 / 1 / 6 / 2;
+}
+
+.div10 {
+  grid-area: 5 / 2 / 6 / 3;
+}
+
+.detailWrapper {
+  display: flex;
+}
+
+.detailImg {
+  margin-right: 5vw;
+}
+
+.description h3 {
+  font-size: 2.5rem;
+
+}
+
+.description p {
+  font-size: 1.6rem;
+  display: inline;
+}
+
+.link {
+  color: white;
+  font-size: 2rem;
+}
+
+.gridPhone {
+  display: none;
 }
 
 /* ============================================

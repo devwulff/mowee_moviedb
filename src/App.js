@@ -10,6 +10,8 @@ import ReleaseAsc from "./components/ReleaseAsc";
 import ReleaseDesc from "./components/ReleaseDesc";
 import VoteAverageAsc from "./components/VoteAverageAsc";
 import VoteAverageDesc from "./components/VoteAverageDesc";
+// import Filter from "./components/Filter";
+// import Sidebar from './components/Sidebar';
 
 function App() {
   return (
@@ -27,7 +29,7 @@ function App() {
         <Route path="voteaverageasc" element={<VoteAverageAsc />} />
         <Route path="voteaveragedesc" element={<VoteAverageDesc />} />
       </Routes>
-    </div>
+    </div >
   );
 }
 

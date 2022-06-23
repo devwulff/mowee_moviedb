@@ -11,7 +11,12 @@ const Footer = () => {
       </h1>
       <p>Imprint</p>
       <div>
-        <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://www.themoviedb.org/"
+        ></a>
+        <a target="_blank" href="https://www.instagram.com/_moweedatabse/">
           <FontAwesomeIcon className="insta" icon={faInstagram} />
         </a>
         <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">
