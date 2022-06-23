@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
-import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookF, } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
   return (
@@ -11,11 +11,12 @@ const Footer = () => {
       <p>Imprint</p>
       <div>
         <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">
-          <FontAwesomeIcon className="insta" icon={faInstagram} />
-        </a>
-        <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">
-          <FontAwesomeIcon className="fbook" icon={faFacebookF} />
-        </a>
+          <a target="_blank" href="https://www.instagram.com/_moweedatabse/">
+            <FontAwesomeIcon className="insta" icon={faInstagram} />
+          </a>
+          <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">
+            <FontAwesomeIcon className="fbook" icon={faFacebookF} />
+          </a>
       </div>
     </footer>
   );
