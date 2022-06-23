@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 
 const Landing = () => {
   window.setTimeout(function () {
-    window.location.href = "/home";
+    window.location.href = "./home";
   }, 5700);
 
   return (
