@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import tmbdlogo from "../images/logo_the_movie_db.svg";
 
 const Footer = () => {
   return (
@@ -16,6 +17,7 @@ const Footer = () => {
         <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">
           <FontAwesomeIcon className="fbook" icon={faFacebookF} />
         </a>
+        <img src={tmbdlogo} alt="TmDB Logo" />
       </div>
     </footer>
   );

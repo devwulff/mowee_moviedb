@@ -3,7 +3,6 @@ import MovieList from "./../components/MovieList";
 import Navigation from "./../components/Navigation";
 import Footer from "./../components/Footer";
 import Sidebar from "../components/Sidebar";
-// import Filter from "./../components/Filter";
 
 const Home = () => {
   const [change, setChange] = useState("");
