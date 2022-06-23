@@ -11,12 +11,13 @@ const Footer = () => {
       <p>Imprint</p>
       <div>
         <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">
-          <a target="_blank" href="https://www.instagram.com/_moweedatabse/">
-            <FontAwesomeIcon className="insta" icon={faInstagram} />
-          </a>
-          <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">
-            <FontAwesomeIcon className="fbook" icon={faFacebookF} />
-          </a>
+        </ a>
+        <a target="_blank" href="https://www.instagram.com/_moweedatabse/">
+          <FontAwesomeIcon className="insta" icon={faInstagram} />
+        </a>
+        <a target="_blank" rel="noreferrer" href="https://www.themoviedb.org/">
+          <FontAwesomeIcon className="fbook" icon={faFacebookF} />
+        </a>
       </div>
     </footer>
   );
