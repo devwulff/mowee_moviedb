@@ -1,34 +1,35 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { bubble as Menu } from "react-burger-menu";
 import "../Sidebar.css";
 
 const Sidebar = (props) => {
   return (
     <Menu right {...props}>
-      <a className="menu-item" href="/upcoming">
+      <Link className="menu-item" to="/upcoming">
         Neuerscheinungen
-      </a>
-      <a className="menu-item" href="/popular">
+      </Link>
+      <Link className="menu-item" to="/popular">
         Am Beliebtesten
-      </a>
-      <a className="menu-item" href="/popularityasc">
+      </Link>
+      <Link className="menu-item" to="/popularityasc">
         Beliebtheit Aufsteigend
-      </a>
-      <a className="menu-item" href="/popularitydesc">
+      </Link>
+      <Link className="menu-item" to="/popularitydesc">
         Beliebtheit Absteigend
-      </a>
-      <a className="menu-item" href="/releaseasc">
+      </Link>
+      <Link className="menu-item" to="/releaseasc">
         Erscheinungsdatum Aufsteigend
-      </a>
-      <a className="menu-item" href="/releasedesc">
+      </Link>
+      <Link className="menu-item" to="/releasedesc">
         Erscheinungsdatum Absteigend
-      </a>
-      <a className="menu-item" href="/voteaverageasc">
+      </Link>
+      <Link className="menu-item" to="/voteaverageasc">
         ø Bewertung Aufsteigend
-      </a>
-      <a className="menu-item" href="/voteaveragedesc">
+      </Link>
+      <Link className="menu-item" to="/voteaveragedesc">
         ø Bewertung Aufsteigend
-      </a>
+      </Link>
     </Menu>
   );
 };

@@ -18,18 +18,18 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="details" element={<Details />} />
-        <Route path="details/:id" element={<Details />} />
-        <Route path="upcoming" element={<Upcoming />} />
-        <Route path="popular" element={<Popular />} />
-        <Route path="popularityasc" element={<PopularityAsc />} />
-        <Route path="popularitydesc" element={<PopularityDesc />} />
-        <Route path="releaseasc" element={<ReleaseAsc />} />
-        <Route path="releasedesc" element={<ReleaseDesc />} />
-        <Route path="voteaverageasc" element={<VoteAverageAsc />} />
-        <Route path="voteaveragedesc" element={<VoteAverageDesc />} />
+        <Route path="/details" element={<Details />} />
+        <Route path="/details/:id" element={<Details />} />
+        <Route path="/upcoming" element={<Upcoming />} />
+        <Route path="/popular" element={<Popular />} />
+        <Route path="/popularityasc" element={<PopularityAsc />} />
+        <Route path="/popularitydesc" element={<PopularityDesc />} />
+        <Route path="/releaseasc" element={<ReleaseAsc />} />
+        <Route path="/releasedesc" element={<ReleaseDesc />} />
+        <Route path="/voteaverageasc" element={<VoteAverageAsc />} />
+        <Route path="/voteaveragedesc" element={<VoteAverageDesc />} />
       </Routes>
-    </div >
+    </div>
   );
 }
 
