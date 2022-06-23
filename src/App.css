@@ -59,7 +59,7 @@ h3 {
 
 p {
   font-family: "Roboto", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1.5rem;
   color: white;
 }
@@ -245,6 +245,11 @@ ul {
   width: 75px;
 }
 
+.ImprintLnk:hover {
+  color: #21e18c;
+  font-weight: 500;
+}
+
 /* ============================================
                 DetailSite
 ============================================ */
@@ -314,6 +319,12 @@ ul {
 
 .div10 {
   grid-area: 5 / 2 / 6 / 3;
+}
+
+.voteAverage {
+  color: #21e18c;
+  font-size: 2.2rem;
+  font-weight: 700;
 }
 
 .detailWrapper {

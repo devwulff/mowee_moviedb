@@ -80,7 +80,7 @@ const Details = () => {
                   <h3>ø Bewertung:</h3>
                 </div>
                 <div className="div10">
-                  <p>{details.vote_average}</p>
+                  <p className="voteAverage">{details.vote_average}</p>
                 </div>
               </div>
               <div>
@@ -176,7 +176,7 @@ const Details = () => {
                   <h3>ø Bewertung:</h3>
                 </div>
                 <div className="div10">
-                  <p>{details.vote_average}</p>
+                  <p className="voteAverage">{details.vote_average}</p>
                 </div>
               </div>
               <div>

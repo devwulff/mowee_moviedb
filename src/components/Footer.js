@@ -13,7 +13,7 @@ const Footer = () => {
         </h1>
       </Link>
       <Link to={`/imprint `}>
-        <p>Imprint</p>
+        <p className="ImprintLnk">Imprint</p>
       </Link>
       <div>
         {/* eslint-disable-next-line */}
@@ -33,7 +33,9 @@ const Footer = () => {
         rel="noreferrer"
         href="https://www.themoviedb.org/"
         className="tmdblogo"
-      ><img className="tmdbpic" src={tmbdlogo} alt="TmDB Logo" /></a>
+      >
+        <img className="tmdbpic" src={tmbdlogo} alt="TmDB Logo" />
+      </a>
     </footer>
   );
 };
