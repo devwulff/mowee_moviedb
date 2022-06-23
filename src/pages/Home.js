@@ -3,24 +3,54 @@ import MovieList from "./../components/MovieList";
 import Navigation from "./../components/Navigation";
 import Footer from "./../components/Footer";
 import Sidebar from "../components/Sidebar";
+import intro2 from "../video/intro.mp4";
+import ReactPlayer from "react-player";
 
 const Home = () => {
+  const [intro, setIntro] = useState(true);
+  // const showVideo = document.querySelector(".landingpage");
+  // console.log(showVideo);
+
+  window.setTimeout(function () {
+    setIntro(false);
+    // showVideo.classList.add("hideVideo");
+    // console.log(showVideo);
+  }, 5700);
+
   const [change, setChange] = useState("");
   const handleOnChange = (elt) => {
     setChange(elt.target.value);
   };
 
   return (
-    <div id="outer-container">
-      <div id="page-wrap">
-        <Sidebar
-          pageWrapId={"page-wrap"}
-          outerContainerId={"outer-cobtainer"}
-        />
-        <Navigation onChange={handleOnChange} />
-        <MovieList change={change} />
-        <Footer />
-      </div>
+    <div>
+      {intro && (
+        <div className="landingpage">
+          <ReactPlayer
+            muted
+            onReady={true}
+            playing={true}
+            url={intro2}
+            width={1280}
+            height={720}
+            controls={false}
+            autoPlay={true}
+          />
+        </div>
+      )}
+      {!intro && (
+        <div id="outer-container">
+          <div id="page-wrap">
+            <Sidebar
+              pageWrapId={"page-wrap"}
+              outerContainerId={"outer-cobtainer"}
+            />
+            <Navigation onChange={handleOnChange} />
+            <MovieList change={change} />
+            <Footer />
+          </div>
+        </div>
+      )}
     </div>
   );
 };
