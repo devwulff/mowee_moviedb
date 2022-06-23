@@ -2,13 +2,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebookF } from "@fortawesome/free-brands-svg-icons";
 import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import tmbdlogo from "../images/logo_the_movie_db.svg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="footer">
-      <h1>
-        <span>.</span>MOWEE
-      </h1>
+      <Link to={`/home `} className="headerLink">
+        <h1>
+          <span>.</span>MOWEE
+        </h1>
+      </Link>
       <p>Imprint</p>
       <div>
         {/* eslint-disable-next-line */}
