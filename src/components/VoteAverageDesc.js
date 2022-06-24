@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
 import Navigation from "./Navigation";
 import Sidebar from "../components/Sidebar";
+import Footer from "./Footer";
 
 const VoteAverageDesc = () => {
   const [voteAvgDesc, setVoteAvgDesc] = useState([]);
@@ -36,6 +37,7 @@ const VoteAverageDesc = () => {
             })}
           </div>
         </main>
+        <Footer />
       </div>
     </div>
   );

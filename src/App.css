@@ -230,105 +230,6 @@ ul {
   padding: 5px 10px 0 10px;
 }
 
-/* ============================================
-                DetailSite
-============================================ */
-
-.detailSite {
-  background: rgb(39, 50, 62);
-  padding: 4%;
-  color: white;
-}
-
-.detailSite h2 {
-  font-size: 4rem;
-  margin-bottom: 5vh;
-}
-
-.detailImg img {
-  margin-right: 5vw;
-}
-
-.parent {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* grid-template-rows: repeat(5, 1fr); */
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  /* height: 70vh; */
-}
-
-.parent div {
-  margin-bottom: 10px;
-}
-
-.div1 {
-  grid-area: 1 / 1 / 2 / 2;
-}
-
-
-.div2 {
-  grid-area: 1 / 2 / 2 / 3;
-}
-
-.div3 {
-  grid-area: 2 / 1 / 3 / 2;
-}
-
-.div4 {
-  grid-area: 2 / 2 / 3 / 3;
-}
-
-.div5 {
-  grid-area: 3 / 1 / 4 / 2;
-}
-
-.div6 {
-  grid-area: 3 / 2 / 4 / 3;
-}
-
-.div7 {
-  grid-area: 4 / 1 / 5 / 2;
-}
-
-.div8 {
-  grid-area: 4 / 2 / 5 / 3;
-}
-
-.div9 {
-  grid-area: 5 / 1 / 6 / 2;
-}
-
-.div10 {
-  grid-area: 5 / 2 / 6 / 3;
-}
-
-.detailWrapper {
-  display: flex;
-}
-
-.detailImg {
-  margin-right: 5vw;
-}
-
-.description h3 {
-  font-size: 2.5rem;
-
-}
-
-.description p {
-  font-size: 1.6rem;
-  display: inline;
-}
-
-.link {
-  color: white;
-  font-size: 2rem;
-}
-
-.gridPhone {
-  display: none;
-}
 
 /* ============================================
                 DetailSite
@@ -349,56 +250,57 @@ ul {
   margin-right: 5vw;
 }
 
-.parent {
+.grid-movielist {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 0.5fr 1fr;
   /* grid-template-rows: repeat(5, 1fr); */
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   /* height: 70vh; */
+  align-items: baseline;
 }
 
-.parent div {
+.grid-movielist div {
   margin-bottom: 10px;
 }
 
-.div1 {
+.releaseDate {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.div2 {
+.releaseDateDetails {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.div3 {
+.genre {
   grid-area: 2 / 1 / 3 / 2;
 }
 
-.div4 {
+.genreDetails {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.div5 {
+.originalTitle {
   grid-area: 3 / 1 / 4 / 2;
 }
 
-.div6 {
+.originalTitleDetails {
   grid-area: 3 / 2 / 4 / 3;
 }
 
-.div7 {
+.overView {
   grid-area: 4 / 1 / 5 / 2;
 }
 
-.div8 {
+.overViewDetails {
   grid-area: 4 / 2 / 5 / 3;
 }
 
-.div9 {
+.rating {
   grid-area: 5 / 1 / 6 / 2;
 }
 
-.div10 {
+.ratingDetails {
   grid-area: 5 / 2 / 6 / 3;
 }
 
@@ -422,6 +324,15 @@ ul {
 .link {
   color: white;
   font-size: 2rem;
+}
+
+.linkContainer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.detailSite .link:hover {
+  color: #21E18C;
 }
 
 .gridPhone {
@@ -466,6 +377,7 @@ ul {
     font-family: "Roboto", sans-serif;
     text-align: center;
     font-size: 1rem;
+    margin-top: 20px;
   }
 
   .glass {
@@ -473,7 +385,7 @@ ul {
     color: #21e18c;
     position: absolute;
     left: 15px;
-    top: 25%;
+    top: 52%;
   }
 
   /* ============================================

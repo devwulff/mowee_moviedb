@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
 import Navigation from "./Navigation";
 import Sidebar from "../components/Sidebar";
+import Footer from "./Footer";
 
 const Upcoming = () => {
   const [upComing, setUpcoming] = useState([]);
@@ -36,6 +37,7 @@ const Upcoming = () => {
             })}
           </div>
         </main>
+        <Footer />
       </div>
     </div>
   );

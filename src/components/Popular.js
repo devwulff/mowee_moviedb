@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
 import Navigation from "./Navigation";
 import Sidebar from "../components/Sidebar";
+import Footer from "./Footer";
 
 const Popular = () => {
   const [popular, setPopular] = useState([]);
@@ -36,6 +37,7 @@ const Popular = () => {
             })}
           </div>
         </main>
+        <Footer />
       </div>
     </div >
 
