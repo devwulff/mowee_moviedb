@@ -10,13 +10,10 @@ const Sidebar = (props) => {
         Neuerscheinungen
       </Link>
       <Link className="menu-item" to="/popular">
-        Am Beliebtesten
+        Am beliebtesten
       </Link>
       <Link className="menu-item" to="/popularityasc">
-        Beliebtheit Aufsteigend
-      </Link>
-      <Link className="menu-item" to="/popularitydesc">
-        Beliebtheit Absteigend
+        Am unbeliebtesten
       </Link>
       <Link className="menu-item" to="/releaseasc">
         Erscheinungsdatum Aufsteigend
@@ -25,10 +22,10 @@ const Sidebar = (props) => {
         Erscheinungsdatum Absteigend
       </Link>
       <Link className="menu-item" to="/voteaverageasc">
-        ø Bewertung Aufsteigend
+        Bewertung ø Aufsteigend
       </Link>
       <Link className="menu-item" to="/voteaveragedesc">
-        ø Bewertung Absteigend
+        Bewertung ø Absteigend
       </Link>
     </Menu>
   );
