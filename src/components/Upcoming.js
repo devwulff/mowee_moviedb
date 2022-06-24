@@ -20,7 +20,11 @@ const Upcoming = () => {
     <div id="outer-container">
       <div id="page-wrap">
         <Sidebar />
+<<<<<<< HEAD
         <NavigationDetails />
+=======
+        <Navigation />
+>>>>>>> alex
         <main className="main">
           <h1>Neuerscheinungen</h1>
           <div className="movie-list">

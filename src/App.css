@@ -269,7 +269,7 @@ ul {
   margin-right: 5vw;
 }
 
-.parent {
+.grid-movielist {
   display: grid;
   grid-template-columns: 0.6fr 1fr;
   grid-column-gap: 0px;
@@ -277,47 +277,47 @@ ul {
   align-items: center;
 }
 
-.parent div {
+.grid-movielist div {
   margin-bottom: 10px;
 }
 
-.div1 {
+.releaseDate {
   grid-area: 1 / 1 / 2 / 2;
 }
 
-.div2 {
+.releaseDateDetails {
   grid-area: 1 / 2 / 2 / 3;
 }
 
-.div3 {
+.genre {
   grid-area: 2 / 1 / 3 / 2;
 }
 
-.div4 {
+.genreDetails {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.div5 {
+.originalTitle {
   grid-area: 3 / 1 / 4 / 2;
 }
 
-.div6 {
+.originalTitleDetails {
   grid-area: 3 / 2 / 4 / 3;
 }
 
-.div7 {
+.overView {
   grid-area: 4 / 1 / 5 / 2;
 }
 
-.div8 {
+.overViewDetails {
   grid-area: 4 / 2 / 5 / 3;
 }
 
-.div9 {
+.rating {
   grid-area: 5 / 1 / 6 / 2;
 }
 
-.div10 {
+.ratingDetails {
   grid-area: 5 / 2 / 6 / 3;
 }
 
@@ -452,6 +452,7 @@ ul {
     font-family: "Roboto", sans-serif;
     text-align: center;
     font-size: 1rem;
+    margin-top: 20px;
   }
 
   .glass {

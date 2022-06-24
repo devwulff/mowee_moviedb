@@ -1,7 +1,12 @@
 import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
+<<<<<<< HEAD
 import NavigationDetails from "./NavigationDetails";
 import Sidebar from "./Sidebar";
+=======
+import Navigation from "./Navigation";
+import Sidebar from "../components/Sidebar";
+>>>>>>> alex
 import Footer from "./Footer";
 
 const ReleaseAsc = () => {
@@ -20,7 +25,11 @@ const ReleaseAsc = () => {
     <div id="outer-container">
       <div id="page-wrap">
         <Sidebar />
+<<<<<<< HEAD
         <NavigationDetails />
+=======
+        <Navigation />
+>>>>>>> alex
         <main className="main">
           <h1>Die 20 ältesten Filme</h1>
           <div className="movie-list">

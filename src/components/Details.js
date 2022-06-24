@@ -51,36 +51,36 @@ const Details = () => {
               />
             </div>
             <div className="description">
-              <div className="parent">
-                <div className="div1">
+              <div className="grid-movielist">
+                <div className="releaseDate">
                   <h3>Erscheinungsdatum:</h3>
                 </div>
-                <div className="div2">
+                <div className="releaseDateDetails">
                   <p>{details.release_date}</p>
                 </div>
-                <div className="div3">
+                <div className="genre">
                   <h3>Genres:</h3>{" "}
                 </div>
-                <div className="div4">
+                <div className="genreDetails">
                   <Genres />
                 </div>
-                <div className="div5">
+                <div className="originalTitle">
                   <h3>Original Titel:</h3>
                 </div>
-                <div className="div6">
+                <div className="originalTitleDetails">
                   <p>{details.original_title}</p>
                 </div>
-                <div className="div7">
+                <div className="overView">
                   <h3>Überblick:</h3>
                 </div>
-                <div className="div8">
+                <div className="overViewDetails">
                   <p>{details.overview}</p>{" "}
                 </div>
-                <div className="div9">
+                <div className="rating">
                   <h3>ø Bewertung:</h3>
                 </div>
-                <div className="div10">
-                  <p className="voteAverage">{details.vote_average}</p>
+                <div className="ratingDetails">
+                  <p>{details.vote_average}</p>
                 </div>
               </div>
               <div>
@@ -147,36 +147,36 @@ const Details = () => {
               />
             </div>
             <div className="description">
-              <div className="parent">
-                <div className="div1">
+              <div className="grid-movielist">
+                <div className="releaseDate">
                   <h3>Erscheinungsdatum:</h3>
                 </div>
-                <div className="div2">
+                <div className="releaseDateDetails">
                   <p>{details.release_date}</p>
                 </div>
-                <div className="div3">
+                <div className="genre">
                   <h3>Genres:</h3>{" "}
                 </div>
-                <div className="div4">
+                <div className="genreDetails">
                   <Genres />
                 </div>
-                <div className="div5">
+                <div className="originalTitle">
                   <h3>Original Titel:</h3>
                 </div>
-                <div className="div6">
+                <div className="originalTitleDetails">
                   <p>{details.original_title}</p>
                 </div>
-                <div className="div7">
+                <div className="overView">
                   <h3>Überblick:</h3>
                 </div>
-                <div className="div8">
+                <div className="overViewDetails">
                   <p>{details.overview}</p>{" "}
                 </div>
-                <div className="div9">
+                <div className="rating">
                   <h3>ø Bewertung:</h3>
                 </div>
-                <div className="div10">
-                  <p className="voteAverage">{details.vote_average}</p>
+                <div className="ratingDetails">
+                  <p>{details.vote_average}</p>
                 </div>
               </div>
               <div>

@@ -20,9 +20,15 @@ const Popular = (props) => {
     <div id="outer-container">
       <div id="page-wrap">
         <Sidebar />
+<<<<<<< HEAD
         <NavigationDetails />
         <main className="main">
           <h1>Am Beliebtesten</h1>
+=======
+        <Navigation />
+        <main className="main">
+          <h1>Neuerscheinungen</h1>
+>>>>>>> alex
           <div className="movie-list">
             {popular.map((elt, i) => {
               return (
@@ -39,7 +45,8 @@ const Popular = (props) => {
         </main>
         <Footer />
       </div>
-    </div>
+    </div >
+
   );
 };
 
