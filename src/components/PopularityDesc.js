@@ -1,12 +1,7 @@
 import { useState, useEffect } from "react";
 import MovieItem from "./MovieItem";
-<<<<<<< HEAD
 import NavigationDetails from "./NavigationDetails";
 import Sidebar from "./Sidebar";
-=======
-import Navigation from "./Navigation";
-import Sidebar from "../components/Sidebar";
->>>>>>> alex
 import Footer from "./Footer";
 
 const PopularityDesc = () => {
@@ -25,11 +20,7 @@ const PopularityDesc = () => {
     <div id="outer-container">
       <div id="page-wrap">
         <Sidebar />
-<<<<<<< HEAD
         <NavigationDetails />
-=======
-        <Navigation />
->>>>>>> alex
         <main className="main">
           <h1>Die 20 populärsten Filme</h1>
           <div className="movie-list">

@@ -12,6 +12,7 @@ const Footer = () => {
           <span>.</span>MOWEE
         </h1>
       </Link>
+      {/* eslint-disable-next-line */}
       <Link to={`/imprint `}>
         <p className="ImprintLnk">Imprint</p>
       </Link>
