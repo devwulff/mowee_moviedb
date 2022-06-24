@@ -388,7 +388,7 @@ ul {
 .Imprint {
   background: rgb(39, 50, 62);
   text-align: center;
-  padding: 10vh 0;
+  padding: 6vh 0;
   height: 60vh;
 }
 
@@ -412,6 +412,12 @@ ul {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Anton", sans-serif;
+}
+
+.icontechnologies {
+  color: #21e18c;
+  font-size: 5rem;
+  padding: 2vh 2vw;
 }
 
 /* ============================================
