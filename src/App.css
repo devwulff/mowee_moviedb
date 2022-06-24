@@ -424,7 +424,7 @@ ul {
                 Media Queries
 ============================================ */
 
-@media only screen and (max-width: 390px) and (max-height: 844px) {
+@media only screen and (min-width: 100px) and (max-width: 580px) {
   /* ============================================
                 HEADER
     ============================================ */
@@ -439,14 +439,15 @@ ul {
 
   .searchbar {
     position: relative;
-    right: 70px;
+    margin: 0 auto;
+    left: -8vw;
   }
 
   .navigation div input {
     background: #24323f;
     border: none;
     margin: 25px 0 0 0;
-    padding: 10px 60px;
+    padding: 1.5vh 5vw;
     border-radius: 30px;
     font-family: "Roboto", sans-serif;
     text-align: center;
@@ -489,6 +490,11 @@ ul {
   .moviecard p {
     font-size: 3rem;
     margin-bottom: 20px;
+  }
+
+  .moviecard img {
+    object-fit: contain;
+    object-position: center;
   }
 
   /* ============================================

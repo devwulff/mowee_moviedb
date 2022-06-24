@@ -64,10 +64,10 @@
                 Media Queries
 ============================================ */
 
-@media only screen and (max-width: 390px) and (max-height: 844px) {
+@media only screen and (min-width: 100px) and (max-width: 580px) {
   .bm-burger-button {
     position: absolute;
-    top: 40px;
-    left: 85vw;
+    top: 38px;
+    left: 87vw;
   }
 }
