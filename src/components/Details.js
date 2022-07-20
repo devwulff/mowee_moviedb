@@ -83,7 +83,7 @@ const Details = () => {
                   <p>{details.vote_average}</p>
                 </div>
               </div>
-              <div>
+              <div className="trailer">
                 <Trailer />
               </div>
             </div>
@@ -121,6 +121,9 @@ const Details = () => {
             </div>
             <div>
               <p>{details.overview}</p>{" "}
+            </div>
+            <div className="trailer_mobile">
+              <Trailer />
             </div>
             <div>
               <h3>ø Bewertung:</h3>
@@ -172,15 +175,15 @@ const Details = () => {
                 <div className="overViewDetails">
                   <p>{details.overview}</p>{" "}
                 </div>
+                <div className="trailer">
+                  <Trailer />
+                </div>
                 <div className="rating">
                   <h3>ø Bewertung:</h3>
                 </div>
                 <div className="ratingDetails">
                   <p>{details.vote_average}</p>
                 </div>
-              </div>
-              <div>
-                <Trailer />
               </div>
             </div>
           </div>
@@ -217,6 +220,9 @@ const Details = () => {
             </div>
             <div>
               <p>{details.overview}</p>{" "}
+            </div>
+            <div className="trailer_mobile">
+              <Trailer />
             </div>
             <div>
               <h3>ø Bewertung:</h3>

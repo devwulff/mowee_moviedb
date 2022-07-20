@@ -362,6 +362,11 @@ ul {
   display: none;
 }
 
+.trailerWrapper {
+  width: 560px;
+  height: 315px;
+}
+
 /* ============================================
                 Landingpage
 ============================================ */
@@ -558,5 +563,10 @@ ul {
   .gridPhone h3 {
     font-size: 3rem;
     margin-bottom: 10px;
+  }
+
+  .trailerWrapper {
+    width: 350px;
+    height: 196px;
   }
 }

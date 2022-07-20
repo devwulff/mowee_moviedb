@@ -26,8 +26,6 @@ const Trailer = () => {
                 <h3>Trailer</h3>
                 <iframe
                   className="trailerWrapper"
-                  width="560"
-                  height="315"
                   src={`https://www.youtube.com/embed/${elt.key}?vq=hd1080`}
                   title="Trailer Player"
                   frameBorder="0"
