@@ -2,8 +2,8 @@
   position: absolute;
   width: 36px;
   height: 30px;
-  left: 90vw;
-  top: 60px;
+  left: 95vw;
+  top: 8vh;
 }
 
 .bm-burger-bars {
@@ -67,7 +67,7 @@
 @media only screen and (min-width: 100px) and (max-width: 580px) {
   .bm-burger-button {
     position: absolute;
-    top: 38px;
-    left: 87vw;
+    top: 4vh;
+    left: 88vw;
   }
 }
