@@ -241,7 +241,6 @@ ul {
 }
 
 .tmdbpic {
-  margin: 3px 55px 0 0;
   width: 75px;
 }
 
@@ -393,8 +392,8 @@ ul {
 .Imprint {
   background: rgb(39, 50, 62);
   text-align: center;
-  padding: 6vh 0;
-  height: 60vh;
+  padding: 8vh 0;
+  /* height: 60vh; */
 }
 
 .ImprintHeadline {
@@ -423,6 +422,10 @@ ul {
   color: #21e18c;
   font-size: 5rem;
   padding: 2vh 2vw;
+}
+
+.imprinttext {
+  padding-top: 2vh;
 }
 
 /* ============================================
@@ -526,8 +529,10 @@ ul {
   }
 
   .tmdblogo {
-    margin: 30px 0 20px 0;
+    margin: 30px auto 20px auto;
     width: 40%;
+    display: block;
+    text-align: center;
   }
 
   /* ============================================
@@ -568,5 +573,12 @@ ul {
   .trailerWrapper {
     width: 350px;
     height: 196px;
+  }
+  /* ============================================
+                Imprint
+============================================ */
+
+  .Team {
+    flex-direction: column;
   }
 }

@@ -45,7 +45,7 @@ const Imprint = () => {
           </div>
         </div>
         <div>
-          <p>
+          <p className="imprinttext">
             Diese Webseite wurde erstellt als Frontend-Abschlussprojekt im
             Bootcamp "Fullstack Webdevelopment" von SuperCode GmbH & Co.KG,
             Düsseldorf
