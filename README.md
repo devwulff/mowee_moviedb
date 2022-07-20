@@ -1,10 +1,10 @@
 Abschlussprojekt des SuperCode Full-Stack Bootcamp (Front-End Modul)
 
-Fokus liegt auf den Umgang mit React, APIs und einer mobilen Version der Applikation
+-Fokus liegt auf den Umgang mit React, APIs und einer mobilen Version der Applikation
 
-Verwendete Technologien: React, CSS
+-Verwendete Technologien: React, CSS
 
-Mobile Version ist optimiert auf eine Bildschirmbreite <500px
+-Mobile Version ist optimiert auf eine Bildschirmbreite <500px
 
 Zum Anschauen bitte hier entlang: https://mowee.netlify.app/
 
