@@ -6,7 +6,7 @@ Abschlussprojekt des SuperCode Full-Stack Bootcamp (Front-End Modul)
 
 -Mobile Version ist optimiert auf eine Bildschirmbreite <500px
 
-Zum Anschauen bitte hier entlang: https://mowee.netlify.app/
+Zum Anschauen bitte hier entlang: https://mowee.netlify.app/home
 
 Viel Spaß und Grüße
 devwulff
